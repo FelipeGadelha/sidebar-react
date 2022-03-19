@@ -5,7 +5,7 @@
 - [icons](https://react-icons.github.io/react-icons/search?q=money)
 - [components](https://www.radix-ui.com/docs/primitives/overview/getting-started)
 
-## Dependencys
+## Dependencies
 
 - yarn add styled-components
 - yarn add @types/styled-components -D
