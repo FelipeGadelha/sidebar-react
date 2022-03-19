@@ -1,5 +1,5 @@
 
-## SItes para suporte
+## Sites para suporte
 
 - [graphcs demo](https://recharts.org/en-US/examples)
 - [icons](https://react-icons.github.io/react-icons/search?q=money)
