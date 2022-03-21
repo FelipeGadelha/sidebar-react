@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-
 export const Container = styled.div`
   width: 100%;
   overflow: hidden;
@@ -14,10 +13,8 @@ type GenderProp = {
 export const GenderIcon = styled.div<GenderProp>`
   display: inline-flex;
   padding: 0.4rem;
-  border: none;
-  outline: none;
   border-radius: 0.3rem;
-  font-size: 2.2rem;
+  font-size: 2rem;
   background: ${p => (p.gender === 'FEMALE') ? "#e66499" : "#0067b5"};
   color: #FFF;//${p => p.theme.colors.text};
 `;
