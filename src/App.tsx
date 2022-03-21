@@ -14,6 +14,7 @@ import dark from "./styles/themes/dark";
 import Profile from "./pages/Perfil";
 import Register from "./pages/Register";
 import Pet from "./pages/Pet";
+import Proprietor from "./pages/Proprietor";
 
 function App() {
 
@@ -47,7 +48,7 @@ function App() {
             <Route path="pet" element={ <Pet/> }/>
             <Route path="enterprise" element={ <h1>Empresa</h1> }/>
             <Route path="veterinary" element={ <h1>Veterinário</h1> }/>
-            <Route path="proprietor" element={ <h1>Proprietario</h1> }/>
+            <Route path="proprietor" element={ <Proprietor/> }/>
           </Route>
           <Route path="profile" element={ <Profile/> }/>
         </Routes>
