@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { BsGenderFemale, BsGenderMale } from 'react-icons/bs';
+import { BsGenderFemale, BsGenderMale, BsTrash } from 'react-icons/bs';
+import { BiEdit } from 'react-icons/bi'
 import Table from '../../components/Table';
 import api from '../../services/api';
 import { Pets } from '../../types/Pet';
 
-import { Container, GenderIcon } from './styles';
+import { Container, GenderIcon, Icon } from './styles';
 
 const Pet: React.FC = () => {
 
@@ -22,18 +23,17 @@ const Pet: React.FC = () => {
   const titlesJSX = titles.map(title =>(
     <th key={title}>{title}</th>
   ))
-
   
   const data = pets?.map(pet =>(
-    
     <tr key={ pet.id }>
       <td data-label={ titles[0] }>{ pet.id }</td>
       <td data-label={ titles[1] }>{ pet.name }</td>
-      <td data-label={ titles[2] }>{ 
-        (pet.gender.toString() === 'FEMALE') ? <GenderIcon><BsGenderFemale/></GenderIcon> : <GenderIcon><BsGenderMale/></GenderIcon> 
-      }</td>
-      <td data-label={ titles[3] }>editar</td>
-      <td data-label={ titles[4] }>excluir</td>
+      <td data-label={ titles[2] }><GenderIcon gender={pet.gender}>
+          {(pet.gender === 'FEMALE') ? <BsGenderFemale/> : <BsGenderMale/>}
+        </GenderIcon> 
+      </td>
+      <td data-label={ titles[3] }><Icon to="#" type='update'><BiEdit/></Icon></td>
+      <td data-label={ titles[4] }><Icon to="#" type='delete'><BsTrash/></Icon></td>
     </tr>
   ))
   return (

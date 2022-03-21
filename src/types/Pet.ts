@@ -30,7 +30,7 @@ export type Pet = {
 export type PetBasic = {
   id: number,
   name: string,
-  gender: Gender
+  gender: string
 }
 
 export type PetDetail = {} & Pet
@@ -40,10 +40,6 @@ export type Pets = Pet[]
 export enum Gender {
   FEMALE = 'Fêmea',
   MALE = 'Macho'
-}
-
-export function convert(gender: string) {
-  return (gender === "FEMALE") ? "Fêmea" : "Macho";
 }
 
 //const Gender = {
