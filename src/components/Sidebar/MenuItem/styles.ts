@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled(Link)`
+
   text-decoration: none;
   list-style: none;
   border-radius: 0.5rem;
@@ -14,6 +15,7 @@ export const Container = styled(Link)`
   overflow: hidden;
   white-space: nowrap;
   padding: 1rem 0;
+  margin: 0 auto;
 
   &:hover {
     background: ${p => p.theme.colors.hover};
@@ -23,6 +25,10 @@ export const Container = styled(Link)`
     background: ${p => p.theme.colors.hover};
     color: ${p => p.theme.colors.text};
   }
+//  &:visited {
+//    background: ${p => p.theme.colors.hover};
+//    color: ${p => p.theme.colors.text};
+//  }
 `;
 
 export const IconMenu = styled.div`

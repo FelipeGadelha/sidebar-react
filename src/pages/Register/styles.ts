@@ -87,11 +87,9 @@ export const MenuItem = styled(Link)`
 export const Panel = styled.div`
   grid-area: panel;
   display: flex;
-  align-items: center;
+  //align-items: center;
   justify-content: center;
   border-radius: ${v.borderRadius};
-
-
   //flex: 1 1;
   -webkit-box-shadow: 0.2rem 0.4rem 1rem 0.1rem ${p => p.theme.colors.shadow.secundary};
   box-shadow: 0.2rem 0.4rem 1rem 0.1rem ${p => p.theme.colors.shadow.primary};

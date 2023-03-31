@@ -2,8 +2,7 @@ import styled from "styled-components";
 import { v } from "../../styles/variables";
 
 export const CustonTable = styled.table`
-  width: 90%;
-  margin: 1rem auto;
+  width: 100%;
   border-collapse: collapse;
   /*contain: layout inline-size;*/
 

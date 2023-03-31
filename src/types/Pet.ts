@@ -35,7 +35,7 @@ export type PetBasic = {
 
 export type PetDetail = {} & Pet
 
-export type Pets = Pet[]
+export type Pets = PetBasic[]
 
 export enum Gender {
   FEMALE = 'Fêmea',

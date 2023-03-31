@@ -5,17 +5,19 @@ import Table from '../../components/Table';
 import api from '../../services/api';
 import { Pets } from '../../types/Pet';
 
-import { Container, GenderIcon, Icon } from './styles';
+import { Container, GenderIcon, Icon, Search, SearchIcon, SearchInput } from './styles';
 
 const Pet: React.FC = () => {
 
-  const [pets, setPets] = useState<Pets>()
+  const [pets, setPets] = useState<Pets>([])
+  const [toggle, setToggle] = useState<boolean>(false)
   const titles = ['id', 'nome', 'gênero', 'editar', 'excluir' ]
 
   useEffect(() => {
     api.get(`/v1/pets`)
       .then(response => {
         setPets(response.data)
+        console.log(response.data)
       }
     )
   }, [])
@@ -38,6 +40,10 @@ const Pet: React.FC = () => {
   ))
   return (
     <Container>
+      <Search toggle={ toggle }>
+        <SearchIcon toggle={ toggle } onClick={()=> setToggle(!toggle)}/>
+        <SearchInput toggle={ toggle }/>
+      </Search>
       <Table titles={ titlesJSX } data={ data }/>
     </Container>
   );

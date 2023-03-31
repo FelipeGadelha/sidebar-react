@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 
 import { Container, PageGuide, Page, Header, Content, Menu, MenuItem, Panel } from './styles';
 
 const Register: React.FC = () => {
-
+  
+  useEffect(() => {
+    console.log('RENDER')
+  },[])
+  
   return (
     <Container>
       <PageGuide>

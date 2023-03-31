@@ -7,7 +7,7 @@ interface TableProps {
   data: JSX.Element[] | undefined
 }
 
-const Table: React.FC<TableProps> = ({titles, data}) => {
+const Table: React.FC<TableProps> = ({titles, data = <tr><td>Nenhum</td></tr>}) => {
   return (
     <CustonTable>
       <thead>

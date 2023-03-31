@@ -3,7 +3,15 @@ const light = {
   colors: {
     primary: '#757ce6',
     secundary: '#77dd77',
-
+    success: '#15B67D',
+    danger: '#f93e3e',
+    warning: '#FFAF00',
+    info: '#007BFF',
+    light: '#E6E8EB',
+    dark: '#44475A',
+    black: '#000',
+    white: '#FFF',
+    equivalent: '#FFFFFF',
     background: '#E6E8EB',
     sidebar: '#FFF',
     header: '#F7F8FA',

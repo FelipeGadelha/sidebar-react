@@ -7,8 +7,13 @@ import * as RiIcons from "react-icons/ri";
 
 import { Container, Content, Page, PageGuide, SplineGraph, Widgets } from './styles';
 import AreaGraphic from '../../components/graphics/AreaGraphic';
+import { useEffect } from 'react';
 
 const Dashboard: React.FC = () => {
+  useEffect(() => {
+    console.log('RENDER')
+  },[])
+  
   return (
     <Container>
 
@@ -16,7 +21,6 @@ const Dashboard: React.FC = () => {
       <PageGuide>
         <Page to="/">Home</Page> / <Page to="/dash">Dashboard</Page>
       </PageGuide>
-        
         <Widgets>
           <Widget title='Veterinários' amount='150' icon={<FaIcons.FaUserMd />}/>
           <Widget title='Pets' amount='100' icon={<MdIcons.MdOutlinePets />}/>

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Table from '../../components/Table';
+import { BsTrash } from 'react-icons/bs';
+import { BiEdit } from 'react-icons/bi'
 import api from '../../services/api';
 import { Proprietors } from '../../types/Proprietor';
 
-import { Container } from './styles';
+import { Container, Icon } from './styles';
 
 const Proprietor: React.FC = () => {
 
@@ -29,12 +31,13 @@ const Proprietor: React.FC = () => {
       <td data-label={ titles[2] }>{ proprietor.cpf }</td>
       <td data-label={ titles[3] }>{ proprietor.email }</td>
       <td data-label={ titles[4] }>{ proprietor.phone }</td>
-      <td data-label={ titles[5] }>editar</td>
-      <td data-label={ titles[6] }>excluir</td>
+      <td data-label={ titles[5] }><Icon to="#" type='update'><BiEdit/></Icon></td>
+      <td data-label={ titles[6] }><Icon to="#" type='delete'><BsTrash/></Icon></td>
     </tr>
   ))
   return (
     <Container>
+      <h1>Proprietors</h1>
       <Table titles={ titlesJSX } data={ data }/>
     </Container>
   );

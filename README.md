@@ -4,6 +4,7 @@
 - [graphcs demo](https://recharts.org/en-US/examples)
 - [icons](https://react-icons.github.io/react-icons/search?q=money)
 - [components](https://www.radix-ui.com/docs/primitives/overview/getting-started)
+- [custom colors](https://polished.js.org/docs/)
 
 ## Dependencies
 
@@ -17,3 +18,4 @@
 - yarn add apexcharts
 - yarn add recharts
 - yarn add @types/recharts -D
+- yarn add polished

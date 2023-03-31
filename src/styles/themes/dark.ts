@@ -1,10 +1,17 @@
 const dark = {
   title: 'dark',
   colors: {
-    primary: '#9F75FF',
+    primary: '#757ce6', //'#9F75FF',
     secundary: '#77dd77',
-
-
+    success: '#15B67D',
+    danger: '#f93e3e',
+    warning: '#FFAF00',
+    info: '#007BFF',
+    light: '#E6E8EB',
+    dark: '#44475A',
+    black: '#000',
+    white: '#FFF',
+    equivalent: '#000000',
     background: '#333',
     sidebar: '#000000',
     header: '#101010',
